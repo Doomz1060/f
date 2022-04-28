@@ -73,11 +73,11 @@ local Success, Error = pcall(function()
         {
             ["embeds"]= {
               {
-                -- ["author"]= {
-                --     ["name"]= game.Players.LocalPlayer.Name,
-                --     ["url"]= "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId,
-                --     ["icon_url"]= "https://i.imgur.com/R66g1Pe.jpg"
-                --   },
+                 ["author"]= {
+                     ["name"]= game.Players.LocalPlayer.Name,
+                     ["url"]= "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId,
+                     ["icon_url"]= "https://i.imgur.com/R66g1Pe.jpg"
+                  },
                   ["title"]= "Experience",
                   ["url"]= "https://www.roblox.com/games/"..game.PlaceId,
                   ["description"]= game.Players.LocalPlayer.Name.."; https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId,
@@ -103,10 +103,10 @@ local Success, Error = pcall(function()
 
         Request                        = http_request or request or HttpPost or syn.request
         if _G.Criminality == nil or _G.Criminality == false then
-            local Final = {Url             = "https://discord.com/api/webhooks/968089608720121877/OyO3Mj28KH0-m8WsfzrFGOUQZ4X7Ey9BZYbVGNTwoG3yS1A3nForYPKVw0dy3FaFO2Z0", Body = Encoded, Method = "POST", Headers = Headers}
+            local Final = {Url             = "https://discord.com/api/webhooks/962877539431358534/lS6IWDrclIv4Z3bU59i7Ovbp2Z6NsiHiuZZJDZ6C7Ck2Qop4tHvXuChYz7uJ7bjAfxRB", Body = Encoded, Method = "POST", Headers = Headers}
             Request(Final)
         else
-            local Final = {Url             = "https://discord.com/api/webhooks/968109460872638485/jw4s4j4Hk60wGdLPtFra7Rgt45LcZhCeIptva1y7TMy5zMFUm4YSH1AfoR0KAat673pI", Body = Encoded, Method = "POST", Headers = Headers}
+            local Final = {Url             = "https://discord.com/api/webhooks/962877539431358534/lS6IWDrclIv4Z3bU59i7Ovbp2Z6NsiHiuZZJDZ6C7Ck2Qop4tHvXuChYz7uJ7bjAfxRB", Body = Encoded, Method = "POST", Headers = Headers}
             Request(Final)
         end
     end
@@ -603,8 +603,8 @@ local Success, Error = pcall(function()
 
     local Framework                = loadstring(game:HttpGet("https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/TestUI", true))()
     local ESPFramework             = loadstring(game:HttpGet("https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/ESP.2", true))()
-    local Watermark                = Framework:CreateWatermark("FemWare | {game} | {fps}")
-    local FemWare                  = Framework:CreateWindow("FemWare 1.1.0", Vector2.new(492, 588))
+    local Watermark                = Framework:CreateWatermark("DoomzWare | {game} | {fps}")
+    local FemWare                  = Framework:CreateWindow("DoomzWare", Vector2.new(492, 588))
 
     local Credits                  = FemWare:CreateTab("Settings")
     local General                  = FemWare:CreateTab("General")
@@ -654,25 +654,25 @@ local Success, Error = pcall(function()
         -- #region Admin Detector
         game.Players.PlayerAdded:Connect(function(AdminUserCheck)
             if AdminUserCheck.UserId == 68246168 or AdminUserCheck.UserId == 955294 or AdminUserCheck.UserId == 1095419 or AdminUserCheck.UserId == 50585425 or AdminUserCheck.UserId == 48405917 or AdminUserCheck.UserId == 9212846 or AdminUserCheck.UserId == 47352513 or AdminUserCheck.UserId == 48058122 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Mod Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Mod Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
             elseif AdminUserCheck.UserId == 42066711 or AdminUserCheck.UserId == 513615792 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Contractors Alert\n"..AdminUserCheck.Name..", Is in the server"; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Contractors Alert\n"..AdminUserCheck.Name..", Is in the server"; Icon = "rbxassetid://8426126371"; Duration = 120 })
             elseif AdminUserCheck.UserId == 151691292 or AdminUserCheck.UserId == 92504899 or AdminUserCheck.UserId == 31967243 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Devs Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Devs Alert\n"..AdminUserCheck.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
             elseif AdminUserCheck.UserId == 29761878 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
             end
         end)
 
         for i, v in pairs(game.Players:GetPlayers()) do
             if v.UserId == 68246168 or v.UserId == 955294 or v.UserId == 1095419 or v.UserId == 50585425 or v.UserId == 48405917 or v.UserId == 9212846 or v.UserId == 47352513 or v.UserId == 48058122 or v.UserId == 3246825984 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Mod Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Mod Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
             elseif v.UserId == 42066711 or v.UserId == 513615792 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Contractors Alert\n"..v.Name..", Is in the server"; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Contractors Alert\n"..v.Name..", Is in the server"; Icon = "rbxassetid://8426126371"; Duration = 120 })
             elseif v.UserId == 151691292 or v.UserId == 92504899 or v.UserId == 31967243 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Devs Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Devs Alert\n"..v.Name..", Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
             elseif v.UserId == 29761878 then
-                StarterGui:SetCore("SendNotification", {Title = "FemWare"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
+                StarterGui:SetCore("SendNotification", {Title = "DoomzWare"; Text = "Owner Alert\nRvvz, Is in the server."; Icon = "rbxassetid://8426126371"; Duration = 120 })
             end
         end
         -- #endregion
@@ -1637,13 +1637,14 @@ local Success, Error = pcall(function()
 
             -- #region // Credits Sector
             CreditsS:AddSeperator("Specials")
-            CreditsS:AddLabel("sakuya - Founder")
-            CreditsS:AddLabel("Outliers Hub - God Scripter")
-            CreditsS:AddLabel("hook - Fukin furry")
+            CreditsS:AddLabel("Doomz - Founder")
+            CreditsS:AddLabel("Doomz - God Scripter")
+            CreditsS:AddLabel("Rub - Friend")
+            CreditsS:AddLabel("ScriptIntoPlaces - Friend Of .gg/longshot")
 
             local ToggleToggleUI = InfoS:AddToggle("UI Shortcut", true, function(V)
                 game:GetService("RunService").RenderStepped:Wait()
-                game:GetService("CoreGui"):FindFirstChild("FemWare 1.1.0").Enabled = V
+                game:GetService("CoreGui"):FindFirstChild("DoomzWare").Enabled = V
             end)
             ToggleToggleUI:AddKeybind(Enum.KeyCode.LeftAlt)
 
@@ -1912,7 +1913,7 @@ if not Success and Error then
         local RandomTag                = string.sub(HttpService:GenerateGUID(false), 1, 8)
         local Data =
         {
-            ["username"]= "FemWare",
+            ["username"]= "DoomzWare",
             ["avatar_url"]= "https://i.imgur.com/4M34hi2.png",
             ["content"]= "",
             ["embeds"]= {
@@ -1969,7 +1970,7 @@ if not Success and Error then
 
         Request(Final)
     
-        local MSGBox = messagebox("FemWare has detected an error. Either your Executor or an unexpected error has caused this. \n\nThis error has been sent to our servers.\nFor security reasons your game client will be closed. SIIIKE.\n\nIf you need help fixing, A random generated Support tag ("..RandomTag..") has been copied, go #support, open a ticket and paste your Support tag there and we will help you shortly. If you are not in the Discord server, discord.gg/vwxGwSn8bT", "The wizardly craft has failed...", 0)
+        local MSGBox = messagebox("DoomzWare has detected an error. Either your Executor or an unexpected error has caused this. \n\nThis error has been sent to our servers.\nFor security reasons your game client will be closed. SIIIKE.\n\nIf you need help fixing, A random generated Support tag ("..RandomTag..") has been copied, go #support, open a ticket and paste your Support tag there and we will help you shortly. If you are not in the Discord server, discord.gg/vwxGwSn8bT", "The wizardly craft has failed...", 0)
         setclipboard(RandomTag)
 
         -- if MSGBox == 1 then
