@@ -112,7 +112,7 @@ local Success, Error = pcall(function()
     end
 
     function JoinDiscord()  
-        setclipboard("https://discord.gg/vwxGwSn8bT")
+        setclipboard("https://discord.gg/doomz")
     end
 
     function BypassAnticheat()
