@@ -1672,8 +1672,9 @@ local Success, Error = pcall(function()
 
             InfoS:AddSeperator("Note")
             InfoS:AddLabel("Has pre-loaded script.")
-            InfoS:AddLabel("Not racist unlike uwu ware.")
-            -- InfoS:AddLabel("Poor non Synapse X users.")
+            InfoS:AddLabel("ScriptWare Is Ass.")
+            InfoS:AddLabel("Poor non Synapse X users.")
+            InfoS:AddLabel("Poor non Synapse X users.")
     
             -- #endregion
 
